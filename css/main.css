@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    font-family: 'Poppins';
+}
+
+.content, .sidebar{
+    width: 100%;
+    height: 300px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    background-color: steelblue;
+}
+
+.sidebar{
+    background-color: darksalmon;
+}
+
+@media  screen and (min-width: 768px) {
+    .container{
+        display: flex;
+    }
+    .content{
+        width: 70%;
+    }
+    .sidebar{
+        width: 30%;
+    }
+}
