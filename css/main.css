@@ -11,6 +11,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 .content{
@@ -21,6 +26,10 @@ body{
     background-color: darksalmon;
 }
 
+.content:hover, .sidebar:hover{
+    background-color: grey;         
+}
+
 @media  screen and (min-width: 768px) {
     .container{
         display: flex;
@@ -29,6 +38,14 @@ body{
         width: 70%;
     }
     .sidebar{
-        width: 30%;
+        width: 30%;      
+    }
+
+    .col{
+        width: 8.33%;
+    }
+
+    .content:hover, .sidebar:hover{
+        width: 50%;  
     }
 }
