@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body{
-    font-family: 'Poppins';
+html {
+    scroll-behavior: smooth;
 }
 
-.content, .sidebar{
+body {
+    font-family: 'Poppins';    
+}
+
+.content,
+.sidebar {
     width: 100%;
     height: 300px;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,34 +23,72 @@ body{
     flex-grow: 1;
 }
 
-.content{
+.content {
     background-color: steelblue;
 }
 
-.sidebar{
+.sidebar {
     background-color: darksalmon;
 }
 
-.content:hover, .sidebar:hover{
-    background-color: grey;         
+.content:hover,
+.sidebar:hover {
+    background-color: grey;
 }
 
-@media  screen and (min-width: 768px) {
-    .container{
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+nav a li {
+    padding: 16px 32px;
+    border: 1px solid grey;
+    width: 100px;
+    text-align: center;
+    transition: 0.5s all ease-in-out;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+}
+
+nav a li:hover {
+    background-color: grey;
+    color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
         display: flex;
     }
-    .content{
+
+    .content {
         width: 70%;
     }
-    .sidebar{
-        width: 30%;      
+
+    .sidebar {
+        width: 30%;
     }
 
-    .col{
+    .col {
         width: 8.33%;
     }
 
-    .content:hover, .sidebar:hover{
-        width: 50%;  
+    .content:hover,
+    .sidebar:hover {
+        width: 50%;
     }
 }
